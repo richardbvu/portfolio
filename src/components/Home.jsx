@@ -11,14 +11,14 @@ const Home = () => {
           <p>A passionate Front-end Developer based in Torrance, California.</p>
           <div className='home__icons'>
             <a
-              href='https://github.com/richardvu93'
+              href='https://github.com/richardbvu'
               target='_blank'
               className='home__icon'
             >
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
-              href='https://github.com/richardvu93'
+              href='https://www.linkedin.com/in/richardbvu/'
               target='_blank'
               className='home__icon'
             >

@@ -12,7 +12,7 @@ const About = () => {
             <div>
               <h2>I AM </h2>
               <div className='about__bar-1'></div>
-              <p>A Junior Front End-Developer</p>
+              <p>A Front End-Developer</p>
             </div>
             <div>
               <h2>GOAL </h2>
@@ -26,8 +26,9 @@ const About = () => {
               <h2>PROJECTS </h2>
               <div className='about__bar-3'></div>
               <p>
-                Purposely focused on Vanilla Javascript, React, HTML and CSS to
-                demonstrate my strong understanding of core fundamentals
+                Purposely focused on React, CRUD, API, Vanilla Javascript, HTML,
+                and CSS to demonstrate my strong understanding of core
+                fundamentals
               </p>
             </div>
           </div>

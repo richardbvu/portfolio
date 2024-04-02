@@ -1,5 +1,6 @@
 import car from "../images/car.jpg";
-import gym from "../images/gym.jpg";
+import gym from "../images/gym.png";
+import coin from "../images/coin.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -15,7 +16,7 @@ const Projects = () => {
         <div className='projects__grid-container'>
           <div className='projects__grid'>
             <div className='projects__img'>
-              <img src={car} alt='' />
+              <img src={car} alt='Preview of website' />
             </div>
             <div className='projects__text'>
               <h3>Car Rent-All</h3>
@@ -31,13 +32,13 @@ const Projects = () => {
               </div>
               <div className='projects__links'>
                 <a
-                  href='https://github.com/richardvu93/car-rental'
+                  href='https://github.com/richardbvu/car-rent-all'
                   target='_blank'
                 >
                   Github
                   <FontAwesomeIcon icon={faGithub} className='projects__icon' />
                 </a>
-                <a href=''>
+                <a href='https://car-rent-all.vercel.app/' target='_blank'>
                   Live Demo
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
@@ -58,16 +59,17 @@ const Projects = () => {
               <div className='projects__skills'>
                 <p>React</p>
                 <p>CSS</p>
+                <p>CRUD</p>
               </div>
               <div className='projects__links'>
                 <a
-                  href='https://github.com/richardvu93/gym-fear'
+                  href='https://github.com/richardbvu/gym-fear'
                   target='_blank'
                 >
                   Github
                   <FontAwesomeIcon icon={faGithub} className='projects__icon' />
                 </a>
-                <a href=''>
+                <a href='https://gym-fear-zeta.vercel.app/' target='_blank'>
                   Live Demo
                   <FontAwesomeIcon
                     icon={faArrowUpRightFromSquare}
@@ -77,7 +79,42 @@ const Projects = () => {
               </div>
             </div>
             <div className='projects__img'>
-              <img src={gym} alt='' />
+              <img src={gym} alt='Preview of website' />
+            </div>
+          </div>
+          <div className='projects__grid' id='project-3'>
+            <div className='projects__img'>
+              <img src={coin} alt='Preview of website' />
+            </div>
+            <div className='projects__text'>
+              <h3>Coin Finale</h3>
+              <p>
+                A website that uses an API for cryptocurrency searching, an
+                online platform that allows users to find and access real-time
+                data such as prices, market cap, and historical performance of
+                different cryptocurrencies.
+              </p>
+              <div className='projects__skills'>
+                <p>React</p>
+                <p>CSS</p>
+                <p>API</p>
+              </div>
+              <div className='projects__links'>
+                <a
+                  href='https://github.com/richardbvu/coin-finale'
+                  target='_blank'
+                >
+                  Github
+                  <FontAwesomeIcon icon={faGithub} className='projects__icon' />
+                </a>
+                <a href='https://coin-finale.vercel.app/' target='_blank'>
+                  Live Demo
+                  <FontAwesomeIcon
+                    icon={faArrowUpRightFromSquare}
+                    className='projects__icon'
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>

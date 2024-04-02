@@ -9,10 +9,10 @@ const Footer = () => {
           Copyright © 2024. All rights are reserved
         </div>
         <div className='footer__icons'>
-          <a href='https://github.com/richardvu93' target='_blank'>
+          <a href='https://github.com/richardbvu' target='_blank'>
             <FontAwesomeIcon icon={faGithub} className='footer__icon' />
           </a>
-          <a href='' target='_blank'>
+          <a href='https://www.linkedin.com/in/richardbvu/' target='_blank'>
             <FontAwesomeIcon icon={faLinkedin} className='footer__icon' />
           </a>
         </div>

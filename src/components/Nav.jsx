@@ -33,7 +33,7 @@ const Nav = () => {
             Contact
           </a>
           <a
-            href='https://github.com/richardvu93'
+            href='https://github.com/richardbvu'
             target='_blank'
             className='nav__link'
             onClick={noShowNavBar}
