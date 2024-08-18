@@ -125,7 +125,7 @@ const Projects = () => {
           <div className='projects__grid-container'>
             <div className='projects__grid'>
               {/* <div className='projects__img-slow'> */}
-              <div className='projects__img'>
+              <div className='projects__img-slow'>
                 <img src={car} alt='Preview of website' />
               </div>
               <div className='projects__text'>

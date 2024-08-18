@@ -591,7 +591,7 @@ html {
 
 /* SLOW SPEED IMG */
 
-/* .projects__img-slow {
+.projects__img-slow {
   width: 40rem;
   height: 500px;
   overflow: hidden;
@@ -603,13 +603,13 @@ html {
 .projects__img-slow img {
   width: 40rem;
   height: auto;
-  transition: transform 12s ease-in-out;
+  transition: transform 15s ease-in-out;
 }
 
 .projects__img-slow img:hover {
   transform: translateY(calc(-100% + 500px));
-  transition: transform 12s ease-in-out;
-} */
+  transition: transform 15s ease-in-out;
+}
 
 .projects__text {
   display: flex;
