@@ -21,9 +21,9 @@ const Projects = () => {
             <div className='projects__text'>
               <h3>Dr. Richard Optometry</h3>
               <p>
-                A gym website that provides a comprehensive resource for
-                membership options, fitness classes, class scheduling, and a
-                gallery.
+                A modern and responsive website for an optometrist's office.
+                Showcasing the optometrist's services, expertise, contact
+                information and appointment booking.
               </p>
               <div className='projects__skills'>
                 <p>TypeScript</p>
@@ -59,10 +59,9 @@ const Projects = () => {
             <div className='projects__text'>
               <h3>Coin Finale</h3>
               <p>
-                A website that uses an API for cryptocurrency searching, an
-                online platform that allows users to find and access real-time
-                data such as prices, market cap, and historical performance of
-                different cryptocurrencies.
+                A website that integrates a cryptocurrency API to provide users
+                with real-time data, including prices, market cap, and
+                historical performance for various cryptocurrencies.
               </p>
               <div className='projects__skills'>
                 <p>React</p>
@@ -91,9 +90,8 @@ const Projects = () => {
             <div className='projects__text'>
               <h3>Gym Fear</h3>
               <p>
-                A gym website that provides a comprehensive resource for
-                membership options, fitness classes, class scheduling, and a
-                gallery.
+                A gym website offering detailed information on membership plans,
+                fitness classes, class schedules, and includes a gallery.
               </p>
               <div className='projects__skills'>
                 <p>React</p>

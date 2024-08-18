@@ -45,6 +45,12 @@ html {
   color: var(--black);
   text-decoration: none;
   scroll-behavior: smooth;
+  transition: all 0.3s;
+}
+
+.nav__logo:hover {
+  color: var(--blue);
+  transition: all 0.3s;
 }
 
 .nav__links {
@@ -188,8 +194,8 @@ html {
 }
 
 .home__text h1 {
-  font-size: 3rem;
-  font-size: 3.7rem;
+  font-size: 3.5rem;
+  color: #147efb;
 }
 
 .home__text h2 {
