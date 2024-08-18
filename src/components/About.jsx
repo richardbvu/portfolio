@@ -18,7 +18,7 @@ const About = () => {
               <h2>GOAL </h2>
               <div className='about__bar-2'></div>
               <p>
-                Create and maintain engaging, professional websites that offer a
+                Create and maintain professional, engaging websites that offer a
                 smooth, satisfying user experience
               </p>
             </div>
@@ -26,9 +26,8 @@ const About = () => {
               <h2>PROJECTS </h2>
               <div className='about__bar-3'></div>
               <p>
-                Purposely focused on React, CRUD, API, Vanilla Javascript, HTML,
-                and CSS to demonstrate my strong understanding of core
-                fundamentals
+                Passionate about React, TypeScript, Tailwind, CRUD, API,
+                Javascript, HTML, and CSS
               </p>
             </div>
           </div>

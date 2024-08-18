@@ -530,6 +530,7 @@ html {
   padding-right: 5rem;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  /* align-items: center; */
 }
 
 .projects__title {
@@ -551,20 +552,22 @@ html {
 
 .projects__grid-container {
   display: flex;
-  justify-items: center;
-  align-items: center;
   flex-direction: column;
-  gap: 5rem;
+  align-items: center;
 }
 
 .projects__grid {
   display: grid;
-  grid-template-columns: 1fr 660px;
+  grid-template-columns: 1fr 1fr;
+  /* background-color: #147efb; */
   padding: 2rem;
   border-radius: 1.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   gap: 1rem;
+  margin-bottom: 5rem;
 }
+
+/* NORMAL SPEED IMG */
 
 .projects__img {
   width: 40rem;
@@ -578,13 +581,35 @@ html {
 .projects__img img {
   width: 40rem;
   height: auto;
-  transition: transform 10s ease-in-out;
+  transition: transform 7s ease-in-out;
 }
 
 .projects__img img:hover {
   transform: translateY(calc(-100% + 500px));
-  transition: transform 10s ease-in-out;
+  transition: transform 7s ease-in-out;
 }
+
+/* SLOW SPEED IMG */
+
+/* .projects__img-slow {
+  width: 40rem;
+  height: 500px;
+  overflow: hidden;
+  background-color: hsla(0, 0%, 46%, 0.2);
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.projects__img-slow img {
+  width: 40rem;
+  height: auto;
+  transition: transform 12s ease-in-out;
+}
+
+.projects__img-slow img:hover {
+  transform: translateY(calc(-100% + 500px));
+  transition: transform 12s ease-in-out;
+} */
 
 .projects__text {
   display: flex;
@@ -592,7 +617,7 @@ html {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  width: 700px;
+  width: 650px;
   font-size: 1rem;
   padding: 0rem 5rem;
 }
@@ -628,7 +653,8 @@ html {
 }
 
 .projects__links a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 5px;
   color: var(--black);
   font-weight: 900;
   font-size: 1.2rem;
@@ -659,8 +685,16 @@ html {
     padding: 3rem 0rem;
     gap: 2rem;
   }
+  .projects__img {
+    width: 45rem;
+    height: 500px;
+    overflow: hidden;
+    background-color: hsla(0, 0%, 46%, 0.2);
+    border-radius: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
   .projects__img img {
-    width: 40rem;
+    width: 45rem;
     height: auto;
     transition: transform 2s ease-in-out 0s;
   }
