@@ -64,9 +64,9 @@ const Projects = () => {
                   visible: { opacity: 1, x: 0 },
                 }}
               >
-                A modern and responsive website for an optometrist's office.
-                Showcasing the optometrist's services, expertise, contact
-                information and appointment booking.
+                A website for an optometrist's office. Showcasing the
+                optometrist's services, expertise, contact information and
+                appointment booking.
               </motion.p>
               <motion.div
                 initial='hidden'
@@ -130,7 +130,7 @@ const Projects = () => {
               initial='hidden'
               whileInView='visible'
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
               variants={{
                 hidden: { opacity: 0, y: -50 },
                 visible: { opacity: 1, y: 0 },
@@ -282,7 +282,7 @@ const Projects = () => {
               initial='hidden'
               whileInView='visible'
               viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
               variants={{
                 hidden: { opacity: 0, y: -50 },
                 visible: { opacity: 1, y: 0 },
@@ -299,7 +299,7 @@ const Projects = () => {
                 initial='hidden'
                 whileInView='visible'
                 viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
                 variants={{
                   hidden: { opacity: 0, y: -50 },
                   visible: { opacity: 1, y: 0 },
@@ -332,9 +332,8 @@ const Projects = () => {
                     visible: { opacity: 1, x: 0 },
                   }}
                 >
-                  A car rental website that provides an user-friendly interface
-                  for comparing and booking cars that vary in make, model, size,
-                  and price.
+                  A car rental website that provides an interface for comparing
+                  and booking cars that vary in make, model, size, and price.
                 </motion.p>
                 <motion.div
                   initial='hidden'
