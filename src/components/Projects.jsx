@@ -5,32 +5,95 @@ import optometry from "../images/optometry.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
     <div className='projects' id='projects'>
       <div className='projects__container'>
         <div className='projects__title'>
-          <h3>PROJECTS</h3>
-          <p>Each project focuses on a unique skill</p>
+          <motion.h3
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            PROJECTS
+          </motion.h3>
+          <motion.p
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            Each project focuses on a unique skill
+          </motion.p>
         </div>
         <div></div>
         {/* RICHARD OPTOMETRY */}
         <div className='projects__grid-container'>
           <div className='projects__grid' id='project-2'>
             <div className='projects__text'>
-              <h3>Dr. Richard Optometry</h3>
-              <p>
+              <motion.h3
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
+                Dr. Richard Optometry
+              </motion.h3>
+              <motion.p
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
                 A modern and responsive website for an optometrist's office.
                 Showcasing the optometrist's services, expertise, contact
                 information and appointment booking.
-              </p>
-              <div className='projects__skills'>
+              </motion.p>
+              <motion.div
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.6, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className='projects__skills'
+              >
                 <p>TypeScript</p>
                 <p>Tailwind</p>
                 <p>React</p>
-              </div>
-              <div className='projects__links'>
+              </motion.div>
+              <motion.div
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.7, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className='projects__links'
+              >
                 <a
                   href='https://github.com/richardbvu/optometry'
                   target='_blank'
@@ -45,29 +108,89 @@ const Projects = () => {
                     className='projects__icon'
                   />
                 </a>
-              </div>
+              </motion.div>
             </div>
-            <div className='projects__img'>
+            <motion.div
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: -50 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              className='projects__img'
+            >
               <img src={optometry} alt='Preview of website' />
-            </div>
+            </motion.div>
           </div>
           {/* COIN FINALE */}
           <div className='projects__grid' id='project-3'>
-            <div className='projects__img'>
+            <motion.div
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: -50 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              className='projects__img'
+            >
               <img src={coin} alt='Preview of website' />
-            </div>
+            </motion.div>
             <div className='projects__text'>
-              <h3>Coin Finale</h3>
-              <p>
+              <motion.h3
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
+                Coin Finale
+              </motion.h3>
+              <motion.p
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
                 A website that integrates a cryptocurrency API to provide users
                 with real-time data, including prices, market cap, and
                 historical performance for various cryptocurrencies.
-              </p>
-              <div className='projects__skills'>
+              </motion.p>
+              <motion.div
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className='projects__skills'
+              >
                 <p>React</p>
                 <p>API</p>
-              </div>
-              <div className='projects__links'>
+              </motion.div>
+              <motion.div
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className='projects__links'
+              >
                 <a
                   href='https://github.com/richardbvu/coin-finale'
                   target='_blank'
@@ -82,23 +205,63 @@ const Projects = () => {
                     className='projects__icon'
                   />
                 </a>
-              </div>
+              </motion.div>
             </div>
           </div>
           {/* GYM FEAR */}
           <div className='projects__grid' id='project-2'>
             <div className='projects__text'>
-              <h3>Gym Fear</h3>
-              <p>
+              <motion.h3
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
+                Gym Fear
+              </motion.h3>
+              <motion.p
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
                 A gym website offering detailed information on membership plans,
                 fitness classes, class schedules, and includes a gallery.
-              </p>
-              <div className='projects__skills'>
+              </motion.p>
+              <motion.div
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className='projects__skills'
+              >
                 <p>React</p>
                 <p>CRUD</p>
                 <p>CSS</p>
-              </div>
-              <div className='projects__links'>
+              </motion.div>
+              <motion.div
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className='projects__links'
+              >
                 <a
                   href='https://github.com/richardbvu/gym-fear'
                   target='_blank'
@@ -113,32 +276,92 @@ const Projects = () => {
                     className='projects__icon'
                   />
                 </a>
-              </div>
+              </motion.div>
             </div>
-            <div className='projects__img'>
+            <motion.div
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: -50 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              className='projects__img'
+            >
               <img src={gym} alt='Preview of website' />
-            </div>
+            </motion.div>
           </div>
           {/* CAR RENTAL */}
           <div className='projects__grid-container'>
             <div className='projects__grid'>
-              {/* <div className='projects__img-slow'> */}
-              <div className='projects__img-slow'>
+              <motion.div
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, y: -50 },
+                  visible: { opacity: 1, y: 0 },
+                }}
+                className='projects__img-slow'
+              >
                 <img src={car} alt='Preview of website' />
-              </div>
+              </motion.div>
               <div className='projects__text'>
-                <h3>Car Rent-All</h3>
-                <p>
+                <motion.h3
+                  initial='hidden'
+                  whileInView='visible'
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                >
+                  {" "}
+                  Car Rent-All
+                </motion.h3>
+                <motion.p
+                  initial='hidden'
+                  whileInView='visible'
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ delay: 0.2, duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                >
                   A car rental website that provides an user-friendly interface
                   for comparing and booking cars that vary in make, model, size,
                   and price.
-                </p>
-                <div className='projects__skills'>
+                </motion.p>
+                <motion.div
+                  initial='hidden'
+                  whileInView='visible'
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ delay: 0.3, duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  className='projects__skills'
+                >
                   <p>Javascript</p>
                   <p>HTML</p>
                   <p>CSS</p>
-                </div>
-                <div className='projects__links'>
+                </motion.div>
+                <motion.div
+                  initial='hidden'
+                  whileInView='visible'
+                  viewport={{ once: true, amount: 0.5 }}
+                  transition={{ delay: 0.4, duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  className='projects__links'
+                >
                   <a
                     href='https://github.com/richardbvu/car-rent-all'
                     target='_blank'
@@ -156,7 +379,7 @@ const Projects = () => {
                       className='projects__icon'
                     />
                   </a>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
