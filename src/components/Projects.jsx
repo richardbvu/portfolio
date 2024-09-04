@@ -2,6 +2,7 @@ import car from "../images/car.jpg";
 import gym from "../images/gym.png";
 import coin from "../images/coin.png";
 import optometry from "../images/optometry.png";
+import grandis from "../images/grandis.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -37,7 +38,91 @@ const Projects = () => {
             Each project focuses on a unique skill
           </motion.p>
         </div>
-        <div></div>
+        {/* THE GRANDIS */}
+        <div className='projects__grid-container'>
+          <div className='projects__grid' id='project-3'>
+            <motion.div
+              initial='hidden'
+              whileInView='visible'
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ delay: 0.4, duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: -50 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              className='projects__img'
+            >
+              <img src={grandis} alt='Preview of website' />
+            </motion.div>
+            <div className='projects__text'>
+              <motion.h3
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
+                The Grandis
+              </motion.h3>
+              <motion.p
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+              >
+                The Grandis is an image-focused, visually captivating website
+                that highlights a modern lifestyle destination combining office
+                spaces, dining, art, and activities.
+              </motion.p>
+              <motion.div
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.3, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className='projects__skills'
+              >
+                <p>TypeScript</p>
+                <p>Tailwind</p>
+                <p>React</p>
+              </motion.div>
+              <motion.div
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                className='projects__links'
+              >
+                <a href='https://github.com/richardbvu/grandis' target='_blank'>
+                  Github
+                  <FontAwesomeIcon icon={faGithub} className='projects__icon' />
+                </a>
+                <a href='https://thegrandis.vercel.app/' target='_blank'>
+                  Live Demo
+                  <FontAwesomeIcon
+                    icon={faArrowUpRightFromSquare}
+                    className='projects__icon'
+                  />
+                </a>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+
         {/* RICHARD OPTOMETRY */}
         <div className='projects__grid-container'>
           <div className='projects__grid' id='project-2'>
@@ -304,7 +389,7 @@ const Projects = () => {
                   hidden: { opacity: 0, y: -50 },
                   visible: { opacity: 1, y: 0 },
                 }}
-                className='projects__img-slow'
+                className='projects__img'
               >
                 <img src={car} alt='Preview of website' />
               </motion.div>
@@ -319,7 +404,6 @@ const Projects = () => {
                     visible: { opacity: 1, x: 0 },
                   }}
                 >
-                  {" "}
                   Car Rent-All
                 </motion.h3>
                 <motion.p

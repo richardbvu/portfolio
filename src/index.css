@@ -597,25 +597,25 @@ html {
 
 /* SLOW SPEED IMG */
 
-.projects__img-slow {
+/* .projects__img-slow {
   width: 40rem;
   height: 500px;
   overflow: hidden;
   background-color: hsla(0, 0%, 46%, 0.2);
   border-radius: 1.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
+} */
 
-.projects__img-slow img {
+/* .projects__img-slow img {
   width: 40rem;
   height: auto;
   transition: transform 15s ease-in-out;
-}
+} */
 
-.projects__img-slow img:hover {
+/* .projects__img-slow img:hover {
   transform: translateY(calc(-100% + 500px));
   transition: transform 15s ease-in-out;
-}
+} */
 
 .projects__text {
   display: flex;
@@ -735,7 +735,7 @@ html {
     max-width: 768px;
   }
   .projects__grid {
-    width: 46rem;
+    width: 47rem;
   }
 }
 
@@ -746,13 +746,14 @@ html {
   }
   .projects__grid {
     width: 39rem;
+    box-shadow: none;
   }
   .projects__text {
     max-width: 400px;
   }
   .projects__img {
     width: 35rem;
-    height: 300px;
+    height: 500px;
   }
   .projects__img img {
     width: 35rem;
@@ -790,6 +791,7 @@ html {
 
   .projects__grid {
     width: 29rem;
+    box-shadow: 0 0 0 0;
   }
 }
 
@@ -797,6 +799,10 @@ html {
 @media screen and (max-width: 360px) {
   .projects__container {
     width: 100%;
+  }
+  .projects__grid {
+    width: 29rem;
+    box-shadow: 0 0 0 0;
   }
 }
 
